@@ -1,0 +1,29 @@
+# Core
+fastapi==0.103.0
+uvicorn[standard]==0.23.1
+python-dotenv==1.0.0
+
+# LangChain & LLM integration
+langchain
+openai==1.3.0  # Only if you use OpenAI embeddings/LLM
+sentence-transformers
+transformers # For local LLMs
+
+# Vector Database
+chromadb
+faiss-cpu  # Optional, for faster vector search
+
+# Utilities
+pydantic
+requests
+aiohttp
+# Optional for PDF/document processing
+PyPDF2
+python-docx
+pdfplumber
+# Optional for nicer logging
+rich
+
+# Optional for local LLM inference
+torch
+accelerate
